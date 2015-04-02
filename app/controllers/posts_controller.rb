@@ -11,10 +11,9 @@ class PostsController < ApplicationController
       format.html # index.html.erb
       format.json { render json: @posts }
     end
-<<<<<<< HEAD
-=======
+
     @posts = Post.includes(:comments => :replies)
->>>>>>> UnTerrify
+
   end
 
   # GET /posts/1
