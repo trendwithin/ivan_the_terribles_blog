@@ -9,7 +9,7 @@ class RepliesController < ApplicationController
       format.html # index.html.erb
       format.json { render json: @replies }
     end
-    @replies = Reply.all
+   # @replies = Reply.all
   end
 
   # GET /replies/1

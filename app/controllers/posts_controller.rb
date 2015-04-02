@@ -12,7 +12,7 @@ class PostsController < ApplicationController
       format.json { render json: @posts }
     end
 
-    @posts = Post.includes(:comments => :replies)
+    #@posts = Post.includes(:comments => :replies)
 
   end
 
