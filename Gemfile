@@ -8,10 +8,7 @@ gem 'pg'
 gem 'rails', '~> 3.2.13'
 gem 'rails_12factor'
 gem 'thin'
-gem 'redis'
-gem 'redis-namespace'
-gem 'redis-rails'
-gem 'redis-rack-cache'
+
 
 group :assets do
   gem 'coffee-rails', '~> 3.2.1'
