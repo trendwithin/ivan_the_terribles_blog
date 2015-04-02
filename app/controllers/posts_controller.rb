@@ -1,13 +1,17 @@
 class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
+  caches_action :show
+
   def index
-    @posts = Post.all
+
+    @posts = Post.limit(50).includes(:comments => :replies)
 
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @posts }
     end
+    @posts = Post.limit(50).includes(:comments => :replies)
   end
 
   # GET /posts/1
