@@ -34,6 +34,4 @@ IvanTheTerriblesBlog::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
-  ENV["REDISTOGO_URL"] = 'redis://username:password@my.host:6789'
-  config.cache_store = :redis_store, ENV['REDISTOGO_URL']
 end
