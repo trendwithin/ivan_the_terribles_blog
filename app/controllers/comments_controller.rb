@@ -9,6 +9,7 @@ class CommentsController < ApplicationController
       format.html # index.html.erb
       format.json { render json: @comments }
     end
+    @comments = Comment.all
   end
 
   # GET /comments/1
