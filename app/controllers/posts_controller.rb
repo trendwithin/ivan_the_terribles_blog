@@ -11,7 +11,6 @@ class PostsController < ApplicationController
       format.html # index.html.erb
       format.json { render json: @posts }
     end
-    @posts = Post.includes(:comments => :replies)
   end
 
   # GET /posts/1
