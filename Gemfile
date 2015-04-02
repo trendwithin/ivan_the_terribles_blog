@@ -8,6 +8,7 @@ gem 'pg'
 gem 'rails', '~> 3.2.13'
 gem 'rails_12factor'
 gem 'unicorn'
+gem 'faker'
 
 group :assets do
   gem 'coffee-rails', '~> 3.2.1'
