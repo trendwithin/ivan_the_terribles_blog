@@ -8,6 +8,7 @@ gem 'pg'
 gem 'rails', '~> 3.2.13'
 gem 'rails_12factor'
 gem 'thin'
+gem 'dalli'
 
 
 group :assets do
