@@ -2,6 +2,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   caches_action :show
+  caches_page :index
 
   def index
 
@@ -46,6 +47,7 @@ class PostsController < ApplicationController
   # POST /posts
   # POST /posts.json
   def create
+    expire_page :action => :index
     @post = Post.new(params[:post])
 
     respond_to do |format|
