@@ -3,6 +3,17 @@
   <h2>Post <%= "#{post.id}: #{post.title}" %></h2>
   <div class="post"><%= post.body %></div>
   <%= render 'post_nav', post: post %>
-  <%= render post.comments %>
+  <%#= render post.comments %>
+  <% post.comments.each do |comment| %>
+    <% cache(comment) do %>
+    <div class="comment">
+      <h3>Comment <%= comment.id %>:</h3>
+      <p><%= comment.body %></p>
+      <div class="reply">
+      <%= render comment.replies %>
+    </div>
+    <% end %>
+  </div>
+<% end %>
 </section>
 <% end %>
