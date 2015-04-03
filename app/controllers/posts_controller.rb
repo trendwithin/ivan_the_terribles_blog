@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   caches_action :show
-  caches_page :index
+  caches_page :index, gzip: :best_compression
 
   def index
 
@@ -12,9 +12,6 @@ class PostsController < ApplicationController
       format.html # index.html.erb
       format.json { render json: @posts }
     end
-
-    #@posts = Post.includes(:comments => :replies)
-
   end
 
   # GET /posts/1
