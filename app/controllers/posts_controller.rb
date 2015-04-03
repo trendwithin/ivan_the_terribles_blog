@@ -7,7 +7,7 @@ class PostsController < ApplicationController
   def index
 
     #@posts = Post.includes(:comments => :replies)
-    @posts = Post.all_cached
+    @posts = Post.includes(comments: :replies)
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @posts }

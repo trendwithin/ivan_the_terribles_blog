@@ -3,6 +3,6 @@ class Post < ActiveRecord::Base
   has_many :comments, dependent: :destroy
 
   def self.all_cached
-   Rails.cache.fetch('Post.all') { includes(comments: :replies) }
+   #Rails.cache.fetch('Post.all') { includes(comments: :replies) }
  end
 end
