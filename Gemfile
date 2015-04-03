@@ -7,7 +7,7 @@ gem 'jquery-rails'
 gem 'pg'
 gem 'rails', '~> 3.2.13'
 gem 'rails_12factor'
-gem 'unicorn'
+gem 'puma'
 gem 'dalli'
 gem 'dotenv'
 
