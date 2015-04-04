@@ -1,3 +1,12 @@
+###Update
+
+Using Brakeman, a number of security vulnerabilities were evident and
+in need of immediate fixing.
+
+SQL Vulnerability: The search query allowed for injection. Modified.
+Secret_Token was in git repo- removed from cache and added to ignore
+Added <%=h to forms
+
 # My New Blog!
 
 I've got a lot to say, and now I have a place to say it!!!!!
