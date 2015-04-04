@@ -1,7 +1,6 @@
 class CommentsController < ApplicationController
   # GET /comments
   # GET /comments.json
-  caches_action :show
   def index
     @comments = Comment.all
 

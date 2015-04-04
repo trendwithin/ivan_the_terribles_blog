@@ -1,7 +1,6 @@
 class RepliesController < ApplicationController
   # GET /replies
   # GET /replies.json
-  caches_action :show
   def index
     @replies = Reply.all
 
