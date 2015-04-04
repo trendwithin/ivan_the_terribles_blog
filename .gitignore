@@ -27,3 +27,5 @@ brakeman_report.html
 
 #token
 /config.initializer/secret_token.rb
+/.env
+.env
