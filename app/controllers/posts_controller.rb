@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
-  caches_action :show
+  #caches_action :show
   caches_page :index, gzip: :best_compression
 
   def index
